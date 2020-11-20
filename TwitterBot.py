@@ -60,9 +60,9 @@ def main():
     tweets = api.user_timeline(screenname, count=1)
 
     replyInBinary(api, tweets, screenname)
-    # postBinaryTweets(api, "I'm a binary boy")
-    # postTweetRobot(api, "I'm a real boy! *screw nose extends*")
-    # printTweets(tweets)
+    postBinaryTweets(api, "I'm a binary boy")
+    postTweetRobot(api, "I'm a real boy! *screw nose extends*")
+    printTweets(tweets)
 
 
 main()
