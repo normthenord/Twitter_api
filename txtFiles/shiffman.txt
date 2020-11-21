@@ -1,0 +1,656 @@
+2020-11-12 17:55:25
+I’m enjoying reading all the suggestions! Please share more of your thoughts...I’m taking A LOT of notes and paying close attention to these ideas. ✨💭✨Would love to hear from @p5xjs @openprocessing and more community members!!! ☺️ https://t.co/7PMVbIpbSe
+ID: 1326946717477072896
+------
+2020-11-12 03:58:15
+I have a new project. It is out now!
+
+Shell Song is an audio &amp; text game about ghosts, bodies, and corporate deep-fake technologies.
+
+It was commissioned by @ODIHQ, and you can play it at https://t.co/Y5dKZ14Hpz, or directly at https://t.co/D6RsJ6QEA3
+ID: 1326736038912536579
+------
+2020-11-12 00:24:35
+August 2021 will be 20th Anniversary of the first release of Processing. How should the community celebrate? What should we do?
+ID: 1326682265401876484
+------
+2020-11-12 00:20:09
+Announcing next #ShowAndTell date with music video dedicated to the #madeWithTFJS community, check it out! Set reminder to join +help spread the love &lt;3 See you on 11 Dec, 9AM PT over on the #TensorFlow YouTube channel https://t.co/EuwYc5MX9N #JS #WebDev #ML #AI #MachineLearning https://t.co/HxEhezrP3F
+ID: 1326681150081949703
+------
+2020-11-10 21:49:47
+I am leading another session of this hands-on workshop on creative writing, computation &amp; machine learning in January for Anderson Ranch (via zoom): https://t.co/1jnBAUYomY No previous programming experience required
+ID: 1326280920438083586
+------
+Please share this wonderful opportunity to learn coding with @p5xjs from @aricianoo @AndersonRanch! 💖 https://t.co/TVkCFSsJz7
+------
+@2sman2sman @glitch Awesome! First three videos are out and I'll be using glitch in a future video about deploying! https://t.co/X6cVSy0bPX
+------
+New series! 🤖How to make a Discord bot with discord.js. https://t.co/X6cVSy0bPX https://t.co/XZvt2X7sCo
+------
+2020-11-08 23:05:09
+beginner-friendly coding workshop led by the amazing elizabeth. she's such a talented and thoughtful educator, sharer, and artist. pay what you can! https://t.co/8nWsxda4ME
+ID: 1325575113065058309
+------
+2020-11-08 23:03:51
+doing a fun little workshop this Wednesday for folks curious about coding and never have done so before. retweet for boost please! #BlackinTech #womenwhocode #blackdesigners https://t.co/f8bT4Dp6ts https://t.co/GEMi4eKDOB
+ID: 1325574785338839040
+------
+2020-11-06 23:53:45
+We've added yet another Open House! Learn about graduate studies in interactive media at ITP, NYU. Lead by ITP alum and Research Resident Raaziq Brown, joined by admissions representatives. Register now: https://t.co/KPXkaOMi4L @NYUTischSchool #ITP @nyuniversity https://t.co/LOeTBVra1h
+ID: 1324862565525164032
+------
+2020-11-05 22:51:14
+Hi anyone who is teaching p5.js - how do you feature student work? Is there a simple way to set up a gallery that I'm blanking on? Looking to have Ss create a portfolio of their work and also showcase their work to each other for specific projects. TIA for any help or tips! #p5js
+ID: 1324484446133850112
+------
+@2sman2sman Releasing a new video tutorial series on the topic this week in case it’s helpful!
+------
+@smartereveryday My kids declared late last night that tomorrow (today) would be a new holiday: "November Day"! Traditions:
+* No pants with words on them.
+* Reflect on if you were good 1 year ago.
+* No wearing red.
+* No candy.
+Let's turn it into November Neighbor Day! 🌍💖 https://t.co/hZR97LQcVM
+------
+@openblackboard @p5xjs @thecodingtrain Hmm, yeah, I just tried it and had the same problem. I also had to update the code to work with Promises for latest Rivescript. Here's what I just ran: https://t.co/bH43xGIdx6
+
+I guess my only idea is. . .headphones? There must be a better way!
+------
+2020-10-30 23:31:50
+Anyone out there with hardware AND OR operating systems experience, &amp; willing to give me a hand on a project?
+
+Email me OR send me a google hangouts message to:
+
+newproject (AT) youvebeenhax (DOT) com
+
+Let's chat! Bonus points if you send what you've worked on. 😎
+ID: 1322320338739494913
+------
+👻 Tomorrow! https://t.co/qxVRAtRorU (would welcome ideas for spooooooky creative coding projects I could try.) https://t.co/oDMeGrWrmT
+------
+I didn't  get to the shapes demo yet (next week!) but here are the results from the tutorial recorded today! This is *not* using transfer learning, trained "from scratch" with convolutional neural network all in the browser with 
+@ml5js! https://t.co/6xHY5OF1tw
+------
+2020-10-30 02:57:52
+we've been in zoom land for how long now? 😭 we just released a new video showing you how to augment your video calls using @p5xjs @ml5js Teachable Machine + OBS. ty for the idea @cameronhunter 🌟
+
+🎥 https://t.co/cWdFdsBcdI
+💻https://t.co/NmpBwwzRlO https://t.co/CNGDTA60Mi
+ID: 1322009800520196098
+------
+Might not look like much but watching this @ml5js convolutional neural network slowly learn to to distinguish between circles, squares, and triangles is bringing me great joy. Recording a tutorial on this tomorrow! https://t.co/72P2hIVfGB
+------
+@tomgerhardt Oh! Hi Tom! All the best to you and family! 💖
+------
+2020-10-29 17:26:11
+Teachers and parents can use DCMP as a remote learning resource by streaming educational videos with captions and audio description. This post has been updated to include info on streaming DCMP accessible educational videos through Zoom video conferencing.
+https://t.co/ieVCAK1LRQ
+ID: 1321865931484778500
+------
+@DrAmandaR Time for an "intro to coding" spot on the wheel?
+------
+@hilmi_zul yes, there's no audio in this clip! just a visual demonstration.
+------
+...and here's what it looks like in a live Zoom call with a little help from coding train friends. 🚂🌈💫💖 https://t.co/1Oa3yTkr1v
+------
+@naoto_hieda @cameronhunter @p5xjs @ml5js oh cool, thanks for sharing!
+------
+2020-10-29 13:21:19
+@shiffman @cameronhunter @p5xjs @ml5js Wooow!!! I like the cultural difference of ML/AR applications - this example from a friend in Japan is similar but made to hide the face 🙂 https://t.co/5E5CAwzncw
+ID: 1321804308564856832
+------
+⏰ All the steps in ~90 seconds ⏰ (full details at https://t.co/sZKsuG4PAI) https://t.co/xoNfHsIVEc
+------
+New video! Based on an idea from @cameronhunter, here's a tutorial about augmenting your video calls with @p5xjs @ml5js Teachable Machine + OBS. 
+🎥https://t.co/sZKsuG4PAI
+💻 https://t.co/2VGysf5b8G https://t.co/MdIQ3rDmZA
+------
+@openblackboard @p5xjs @thecodingtrain oh awesome, please share!
+------
+@porrigf @nicolehe @ITP_NYU It works super well now, in fact I am about to release this video about how to use Teachable Machine + OBS + Zoom to automate your shenanigans! https://t.co/sZKsuG4PAI (sorry not visible now, finishing up captions and other minor details, live tomorrow morning!).
+------
+@foxthebomb please try again! https://t.co/z3B8cHtECS
+------
+@colorinathebot #ColorizeThisPlz https://t.co/jpIxp2vuau
+------
+@foxthebomb Yeah, I can confirm it's not working again. Sigh. I will get it back!
+------
+@foxthebomb Darn. I will check again soon! Anything in JavaScript console?
+------
+The Tom Scott script generator is back online: 🤖 https://t.co/z3B8cHtECS 🤖. Apologies if you tried yesterday when it was down. https://t.co/Fus1yOymcv
+------
+@_frix_ @runwayml No sadly it’s broken! Wasn’t you! Apologies I’m not sure why the mode isn’t responding!
+------
+During today's live stream I explored the idea of an "AI generated" Tom Scott video script. You can now generate your own here! https://t.co/z3B8cHtECS (model trained with @runwayml) https://t.co/9kSmyy1djs https://t.co/s1W3sl4uQn
+------
+2020-10-23 11:36:18
+Consentful Communication on the Web (Thursday). Talking through how we create spaces, tools, and protocols for consentful communication with @xinemata, @outofambit, and @montoyamoraga. https://t.co/NibbyHiqLa
+ID: 1319603551929237504
+------
+2020-10-23 11:36:10
+Accessing WebXR Through Art (Tuesday). Valencia James, Stalgia Grigg, and Evelyn Eastmond will present their work developing platforms and tools that open access to WebXR through art, in a time when remote experimentation is desperately needed. *Link in bio* https://t.co/NShITgoR8L
+ID: 1319603517074624512
+------
+2020-10-23 11:35:56
+We're partnering with @w3c to join their TPAC public breakouts with sessions curated by @laurenleemack! 
+(Monday) @mind_seu , @AshleyJaneLewis, @cleogirl2525, and @ameliawb will reflect on their diverse practices and how each points us toward future vision of an ethical internet. https://t.co/NVh1X0VxiT
+ID: 1319603461097476096
+------
+2020-10-20 17:39:58
+This is happening tomorrow! 
+
+Talking about AI means talking about data means talking about collections means talking about power means talking about history and I will never stop insisting that all of these are connected https://t.co/u4dQ3xGkGh
+ID: 1318607909979365376
+------
+@yeousmite happy bot day!
+------
+I can't choose just one! 😱 https://t.co/I6Wr2aQbsS
+------
+2020-10-17 20:14:00
+REALLY looking forward to the Black Software Book Club with @NYUTischSchool @ITP_NYU Tech &amp; Society. Come join us if you can! https://t.co/UPaV9BM3vx
+ID: 1317559506302283778
+------
+2020-10-17 19:05:11
+today is the first day of Power Up, @POWRPLNT's festival of artist-led engagement with technology for youth. @cyberdoula is hosting and we're kicking it off with my fave @elizabethslash who is doing a class on manifesting in/with code using @p5xjs 🤩💕✨
+ID: 1317542191129133056
+------
+@a2zitp choo choo choo!
+------
+@a2zitp hi
+------
+@a2zitp choo choo!
+------
+2020-10-15 16:46:29
+Come work with me! The @CMUSchoolofArt seeks a tenure-track Assistant Professor in Sculpture. Application deadline is December 15, 2020: https://t.co/Wr0xsHZihV
+ID: 1316782508466413571
+------
+@CentrlPotential @cate_cevallos @ProcessingOrg Here’s a double pendulum video! https://t.co/X30gq2eb5T
+------
+2020-10-15 01:03:53
+You got it. Here's 100 double pendulums, but I'm showing a line that connects their ends only. Color represents distance between adjacent pendulums. Red = close, Blue = far. https://t.co/TQqNhAHuFi https://t.co/Tn8SKX9T4w
+ID: 1316545294369280003
+------
+@CentrlPotential This is amazing! 🌈
+------
+@ian_sparky @miladamilli I do love it!! 🌸
+------
+I discovered twitter-lite https://t.co/MiaEg6HVu2 maintained by @draftbit @peterpme and wondering if I'm duplicating efforts? One difference here is that I am integrating twitter-autohook modules for event listening instead of defunct streaming API?
+------
+@REAS Do those old videos hold up ok? Let me know if I can help out or if there are requests for specific topics / redos!
+------
+2020-10-13 23:02:17
+I'm teaching a ten-week introduction to coding with Processing for artists and designers. All of the materials are online if you'd like to follow: https://t.co/TvvcK1DEQX
+ID: 1316152304672952322
+------
+@rolfvangelder oh I hadn't seen this one! unfortunately looks like it hasn't had updates since 2018 and doesn't support the new Account Activity API.
+------
+@Vorniy I have no idea what that means 😂 but sure! File an issue for future tracking!
+------
+This will work, right? https://t.co/JupU8Rem6W
+------
+To dream. . .an impossible dream. . . 💤 (name suggestions please) https://t.co/O8cWGpGmlF
+------
+So now it's time to learn how to publish a node package! I'll probably tackle this on @thecodingtrain's Saturday stream this week.
+------
+work-in-progress code: https://t.co/qT34LB8yrz
+
+I'm probably setting myself up to be another maintainer of another out-of-date node.js twitter API client, but I've struggled so much with this for over a year now I really want to save others from the pain. https://t.co/5NlIFNADuQ
+------
+@path_selector Yes, exactly. This has taken me forever, it's all there in examples and documentation from Twitter but required hours upon hours of trial and error to figure it out!
+------
+@a2zitp hit me baby one more time
+------
+Working on a lightweight node.js module for authenticating to Twitter API, posting tweets, and automatically creating a webhook to listen to the account activity API. Finally going to update the 2016 examples and tutorials! https://t.co/cR6qDZu3da https://t.co/GfXthUovk7
+------
+@a2zitp please work :)
+------
+@a2zitp boing
+------
+@a2zitp hi
+------
+@a2zitp hello
+------
+@raanapbot @robcesternino @arabinow @Keev26 @chrisdbragg Are you just copying ideas again @raanapbot?
+------
+@robcesternino @arabinow @Keev26 @raanapbot Rob Rob, Aki, and Dr. Amanda, this was incredible. Also, I would like to issue the following proclamations.
+
+1. Whereas, on the sixteenth day of July, in the year of our Wheel two thousand and twenty, @raanapbot was born.
+2. We are the city!
+------
+While preparing for an updated twitter bot tutorials series, I found myself falling deep into the world of wheel spins, ping pong balls, and proclamations. They'll be using A Million Random Digits with 100,000 Normal Deviates in no time. Tremendous work @arabinow! https://t.co/Bwrav2Jvgh
+------
+2020-10-02 19:42:38
+A cluster hire of 10 faculty positions in race &amp; decoloniality is happening here at RISD, including graphic design, arch, landscape arch, photo, jewelry, foundations, history, &amp; digital media. get on it!  https://t.co/imrEfEridD  https://t.co/LtHU6p41Pp https://t.co/qQtTeT6Hmh
+ID: 1312115795011362816
+------
+2020-10-01 19:17:54
+We’re hiring! The Processing Foundation is run by volunteers and a few incredible part-timers. We’ve grown little by little and we’re excited to make the next step with a search for a part-time Grants &amp; Finance Manager:
+https://t.co/wsIMZN7dsD @ProcessingOrg
+ID: 1311747183239192577
+------
+Is this because of #Hacktoberfest? It's a constant stream of minor / spam changes. https://t.co/DcOXH9cZkm
+------
+2020-09-26 14:58:17
+Hi I’m looking for an LA-based assistant! Creative applications with occasional jokes appreciated: apply@simonegiertz.com
+ID: 1309869910634496000
+------
+2020-09-25 17:20:49
+hey friends, I’ll be live on my residency’s twitch channel today @ 1PM PST / 4PM EST for my 1st open studio. stop in, stay awhile.
+
+https://t.co/jxoePCNEdG https://t.co/FKh88s4GSO
+ID: 1309543392897118208
+------
+2020-09-25 17:20:38
+:) https://t.co/BBtxaWPpC0
+ID: 1309543344431927296
+------
+@Teachme_Teachme @cameronhunter @p5xjs @ml5js Unfortunately the next chance is 2021, I was making significant progress last spring but the pandemic put the breaks on it. Slated to teach Nature of Code course starting in Feb so work shall resume in Jan!
+------
+2020-09-24 20:58:02
+check out p5.js featured in @AIGAeyeondesign "How Codes of Conduct Are Combatting Open Source’s Diversity Problem" https://t.co/P8BFI5YSCn
+ID: 1309235667302576130
+------
+Tentatively planning to attempt my own version of this wonderful idea from @cameronhunter with @p5xjs, @ml5js, teachable machine, and Open Broadcast Studio during a live stream tomorrow https://t.co/EVN4zcExOX. (I wonder if sound could also be used for accessibility?) https://t.co/6ODHvEhm2I
+------
+2020-09-23 16:34:14
+The producers of The Social Dilemma brought some serious and valid concerns about the impact of social media platforms to a broad Netflix audience. BUT… 🧵
+ID: 1308806894807666691
+------
+☀️Good morning☀️ to all of your pull requests. I'm not sure what I expected but this is just 🌈💙💚💛💜❤️🌈💫 https://t.co/vuc42op0B2
+------
+@mishraalok Cannot wait!!!
+------
+@PonceCampuzano Yes please!!!
+------
+@runewake2 Go for it!!!
+------
+We have our first contribution! You know you can't resist! https://t.co/YJH2VbYDPP
+------
+Do you love 💖 and 🌈? Do you want to practice making a  pull request on @github? I am working on a video and it requires a README full of hearts and rainbows! Hurry!
+🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖 https://t.co/r3uMBKDZK2
+🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖🌈💖
+------
+Buying my ticket in 3. . .2 . . 1 . . . https://t.co/uX6asUOKy0
+------
+@W13Donny @arduino @SimoneGiertz Indeed! Here’s a glider! https://t.co/GxI9o9MjdX
+------
+Thank you to @SimoneGiertz for helping me get over my fear of hardware, I'm just in love with the Every Day Calendar! 💖📅 Next up: @p5xjs for camera interaction! Code from yesterday: https://t.co/MDiEUBBCaY https://t.co/rFjkBSeCH3
+------
+2020-09-20 13:43:57
+That feeling when your code works... 
+
+Have a few hours to spare? Watch @shiffman program @SimoneGiertz's Every Day Calendar with the Arduino IDE! https://t.co/WHfpRcXOIL https://t.co/77VZMebmQz
+ID: 1307676876534689792
+------
+2020-09-20 00:02:46
+A late evening well spent enjoying watching @shiffman implement the Game Of Life on @SimoneGiertz's #EveryDayCalendar on @thecodingtrain live stream 😃‍💻 https://t.co/8uHQ5mvp8V
+ID: 1307470218629918720
+------
+2020-09-19 23:35:21
+Loving @shiffman coding Game of Life for @SimoneGiertz's everyday calendar right now https://t.co/96bp5TZVm3
+ID: 1307463320639803392
+------
+@hellagrapes Oh that could be! I will try that! Thanks and hi!
+------
+Anyone know what this means? Trying to set up an old mac that I wiped for my kids remote school but getting strange error messages when booting up to internet restore. https://t.co/qP8ZQnPE7R
+------
+2020-09-16 02:43:22
+Just posted a second alpha release of Processing 4. 🤖 
+
+Would have been out a month ago but 1) Apple's ever-changing rules for signing and notarization are… something, and 2) we're in the midst of a pandemic. 
+
+But uh, enjoy! 🥳 https://t.co/fqO8wVyEF2
+ID: 1306061082239414278
+------
+2020-09-16 02:25:56
+Use Fourier series. 
+
+(Sorry, we're mathematicians, we take things literally.)
+
+See: https://t.co/c0VjVz1Iiq by @shiffman https://t.co/c9HB2ujAy4 https://t.co/2pyXjqkE2L
+ID: 1306056698445135873
+------
+My love language is regular expressions.
+------
+Any suggestions for a fun regular expression game that can be played over Zoom collaboratively? https://t.co/gKazJUlFhM
+------
+@saberikhan @AyeshaASiddiqi Would love to hear how it is! Keep meaning to check it out.
+------
+@REAS @kcimc @jtnimoy @ProcessingOrg Indeed, this is the webpage for @jtnimoy's 2003 Processing workshop. She along with @pitaru first taught Processing at ITP and it's where I discovered it. https://t.co/xkg0BqOtkm
+------
+2020-09-10 01:58:06
+#TensorFlowJS Show&amp;Tell #3 is booked! Join us 18 Sep, 10AM PST at our new home on #TensorFlow YouTube channel! See amazing demos that give you super powers. 8 new projects by the community that will blow your mind. Share the love+see you there! #JS #ML #CreativeCoding #webdev #AI https://t.co/FutqlUzgzq
+ID: 1303875366600278021
+------
+2020-09-09 21:04:53
+Hey! We're looking for volunteers to conduct mock technical interviews for folks looking for their first eng role. The participants are primarily career-changers, non-traditionally educated (bootcampers or self-taught), and underrepresented in the industry. Signal boost, please!
+ID: 1303801574846857222
+------
+2020-09-08 18:11:26
+In today's @nytimes, I argue that we shouldn't give imaginary grades to real students. Let's learn from the #IBscandal and the A-level mess, and avoid future algorithmic-grading disasters. #technochauvinism https://t.co/lTQIDxcmzg
+ID: 1303395534829506562
+------
+@kjhollen @EDP_Denver wow, congrats!
+------
+2020-09-03 23:50:03
+I wanted to grow the @DiversifyTechCo community to 10,000 members by the end of the year
+
+Once COVID hit &amp; we had to keep our daughter home, I focused on maintaining vs growing
+
+I'd like to still try. If you can send https://t.co/RSwWJtcsEM to one person, that'd be amazing! 😊🙏🏾
+ID: 1301668810919940097
+------
+2020-09-03 23:49:27
+I've been working on a new digital toy concept. A lot more to come with this one...
+#ios #design #madewithunity https://t.co/z4rQMkWxl7
+ID: 1301668660495482893
+------
+@realsandpiper No! But I am going to be releasing new tutorials this semester as part of my fall course. I now having it working using Twitter's new webhook API requirements.
+------
+@shalinikantayya @AJLUnited @ITP_NYU Thank you! Just filled out the form, feel free to DM if I can answer any questions!
+------
+@bitbased @SimoneGiertz Whoa! Mine just showed up (still boxed) and was thinking about trying something like this on @thecodingtrain in the next couple weeks. Let me know how I can link to/credit you if I do!
+------
+2020-09-02 21:56:35
+Thanks to all my ❤️ patrons I could finally finish updating the Turux project! Go and play again with all the 21 pieces online here: https://t.co/NBFtMNxzJJ And if you like what you see, please consider becoming my patron too: https://t.co/nFfYuxqchj https://t.co/9QiAzBcfos
+ID: 1301277871122657280
+------
+2020-09-01 15:21:58
+Babycastles is announcing a Fall residency as a platform for making &amp; presenting new work. We welcome artists and practitioners of any definition to apply. We are offering $500 honorarium for the residency period, Oct 15 - Jan 15. Applications due Sept 25. https://t.co/RaX8lCF0G8
+ID: 1300816174922584064
+------
+2020-09-01 02:14:53
+“No amount of A.I. can save white America’s soul.” My reflection on race and tech, inspired by @TochiTrueStory incredible story “How to Pay Reparations: A Documentary.” https://t.co/374B1scRBN
+ID: 1300618099067154433
+------
+@melanieh0ff Catching up on this late, sorry to have missed it live. It's so wonderful and inspiring to me! Is your "folder poetry" workshop / exercise publicly available? I'd like to try with students sometime and credit it properly.
+------
+2020-08-28 19:51:59
+I'm organizing a small gathering for exploring online collaborative platforms with @ProcessingOrg &amp; @naoto_hieda on Sep 6 at 2pm ET
+
+Want to explore with us? Or be a *tour guide* for any online platform/collaborative space that excites you?
+
+Sign up here: https://t.co/uocAAo4sDC https://t.co/otIqeufnJO
+ID: 1299434576213938177
+------
+@AJLUnited Hi! I would like my students (~16) to watch Coded Bias as part of the first week of my Introduction to ML for the Arts course @ITP_NYU (https://t.co/OVuOvkmDum). Possible for me to arrange / purchase viewing? Thank you!
+------
+@robcesternino @raanapbot @wtucker4_ @ShelbyWisely https://t.co/TzyLpYo7xJ
+------
+2020-08-17 18:34:28
+Delighted to announce that #PEmbroider, @creativeinquiry's library for computational embroidery in @ProcessingOrg, is now public! Huge gratitude to @LingdongH, @mus_akos, and our cohort of generous beta-testers for all their work. https://t.co/eXGD2NpUdU
+ID: 1295428802164805635
+------
+@BcTomasZelenka @raanapbot @Jailem Oddly that was raanapbot attempting a flintstones gif.
+------
+@raanapbot @Jailem @BcTomasZelenka lol
+------
+@Jailem @BcTomasZelenka @raanapbot Yeah I have it set to G-rated only! I suppose I could block this one GIF or I could submit a request to change rating.
+------
+This thread (from July, I'm behind) is incredible, I can't stop subscribing! https://t.co/EEYF3OzSpQ
+------
+@Jailem Thanks for the heads up! I have the filter on GIF searches set to PG but maybe I’ll move it to G and see if that helps.
+------
+@arabinow @raanapbot @HaymakerHattie Heh, the bot was searching for a GIF to say "in this economy" might have to pull that one out.
+------
+2020-08-14 15:28:39
+Inhwa Yeom &amp; Seonghyeon Kim's Fellowship brought @p5xjs to South Korea, focused on the 50+ age group. Their project, including curriculum, is at https://t.co/GLsq3mLXeX
+
+"Accessible platforms for creative, collaborative learning are a life-long interest."
+
+https://t.co/zqCycK7oTg
+ID: 1294294874032939008
+------
+@louanben @thecodingtrain Yes I’m planning to this fall! I recently got all the webhook stuff working.
+------
+2020-08-11 01:29:08
+It’s finally live! So excited to officially launch @discohq_, audio courses on your favorite technical topics. 
+
+The first set of courses is “The Machine Learning Bundle” → 8 courses, 10+ hours of content. Check it out! RTs are very much appreciated! 🙏🏾
+
+https://t.co/ETP5L4hPa1
+ID: 1292996438260158464
+------
+2020-08-09 21:49:33
+Filmmaker Philip Shane has launched a documentary all about the beloved puzzle game Myst. https://t.co/WDvcMOcWYv
+ID: 1292578792347783170
+------
+It's been an honor to work with @aah_dee_ on her @ProcessingOrg fellowship. If you aren't following her Cozy Coding Twitch channel, you are missing out! https://t.co/Q2myYKI5lH
+------
+@saronyitbarek @discohq_ Can’t wait!
+------
+2020-08-06 22:30:21
+Urban legend says that Mona Lisa’s eyes follow you as you move around the room. I made an app that actually does that! Here: https://t.co/iOkeGz1vhM 
+
+Made w/ @TensorFlow + First Order Motion Model #MachineLearning #AI #DeepLearning #art #Tensorflow #TensorflowJS #CreativeCoding https://t.co/qSiKUK45vf
+ID: 1291501894108680192
+------
+2020-08-06 19:48:00
+🚨 $10,000 Programming Language Grant 🚨
+
+We believe we need fresh ideas in programming! We're sponsoring a team with the most creative ideas and prototype to build their dream language.
+
+- Jam dates: Aug 10th-31st
+- Registration opens: Aug 1st
+
+Read more: https://t.co/FcRt8bNGpl
+ID: 1291461039985512451
+------
+2020-08-06 17:11:34
+I've always wanted to do a news show specifically for developers by developers. Really excited to host a show designed to keep devs up to date on what's going on in tech and how it affects us. Hope you subscribe 🤓 https://t.co/xXBk0FmOXy
+ID: 1291421672134803457
+------
+2020-08-06 16:47:21
+✨Big update ✨
+
+Runway now lives on the web. Access all features directly from your browser.
+
+Get started now: https://t.co/lUhkn4W11I https://t.co/5DkTZJSJ0M
+ID: 1291415574912864261
+------
+2020-08-05 12:57:33
+Dear friends: Proposals for the (10!) $5K #ShallMakeShallBe commissions are due 8/8. I'm assisting, but I'm not on the jury, and I am offering constructive feedback on proposals. My DMs are open; applicants identifying as BIPOC/LGBTQIA+/Womxn are especially encouraged to HMU! 😊 https://t.co/14UddhEUCO
+ID: 1290995358512881664
+------
+2020-08-04 22:47:03
+.@jovialjoy's research helped persuade Amazon, IBM, and Microsoft to put a hold on facial recognition technology. Through her nonprofit @ajlunited, she's now battling AI bias in other realms. Joy highlights the #FCMostCreative People of 2020: https://t.co/IMHwr3z9lA https://t.co/5YJzBjNgqy
+ID: 1290781323045605382
+------
+@_rizz0s @dan_abramov @zachlieberman I'd like to add @laurenleemack @hellothisiscass @aah_dee_ @AshleyJaneLewis @bxmani @leejoeyk @deedottiedot @ed_saber to the mix related to @p5xjs and @ml5js!
+------
+@ednl @thecodingtrain Yeah, the good news is I only monetize a smaller subset of my videos so it's not as many as you might think, switching them one at a time, let me know if you catch one with a midroll anytime while watching!
+------
+@ednl @thecodingtrain doh, it looks like the setting I put on all the videos is "midroll" instead of "preroll" this is NOT what I meant to do! Trying to fix. . .
+------
+@ednl @thecodingtrain zoinks! I thought I had turned this off on everything. Can you send me a link to which video you saw a midroll on?
+------
+@sam_lavigne @p5xjs Oh also, I was a little bit confused at first as to whether I needed to create a folder in advance or if it would make one for me.
+------
+@sam_lavigne @p5xjs works great! ❤️❤️❤️❤️❤️ Some feature ideas if you are thinking of expanding:
+
+* an option to use CDNs for p5 core and add-on libraries
+* custom template for index.html/sketch.js/etc
+* interface element instead of cntrl-shift-p
+------
+2020-08-02 18:21:33
+I made a Visual Studio Code extension that lets you create @p5xjs projects, helps install contributed libraries, and generally makes it easier to use p5 from VSCode. Would love some feedback, before I push it to my students! https://t.co/7aeP31kziV
+ID: 1289989733058138112
+------
+2020-08-02 17:29:57
+.@LeonYin explains how he tackled this mammoth investigation.  Cameo by @p5xjs in the methodology https://t.co/Nh3QJV7FrY
+ID: 1289976746037534720
+------
+2020-08-02 17:28:35
+Are you a parent with children (9-14 years old) who are interested in video games? Together w @MSFTResearch &amp; @MSMakeCode we would like to invite your family to a series of fun 30-minute play &amp; coding sessions. If  interested please fill this survey
+https://t.co/3k7GwH5I7A https://t.co/G25PEzICnq
+ID: 1289976401714585600
+------
+2020-08-01 17:05:35
+Want to learn how to visualize sound while learning p5.js? 🎹 Sign up for the Bitrate Series to attend this free workshop on August 7! https://t.co/6zy1lrGTyF
+
+BitRate Series: Machine Learning &amp; Music
+August 7 – September 7
+@GoogleMagenta Team at Google Research x Gray Area https://t.co/5P7kKIJgSy
+ID: 1289608227735232512
+------
+2020-08-01 15:31:34
+🎉New Video!🎉
+
+DNA holds enough information to make a person, but can we use it to store our digital data too? This week, we’re talking about DNA digital data storage with synthetic DNA!
+
+https://t.co/7S72lOLG4i https://t.co/RTTCvyihlk
+ID: 1289584565661532160
+------
+2020-07-29 20:12:43
+Adding the Chandra X-ray Observatory by popular demand. Exploring the Solar System https://t.co/bGLScW6Nv3 https://t.co/t4MXix0fTO
+ID: 1288568156391387137
+------
+@Redfoo Thank foo!! 🚂🌈❤️
+------
+Beautiful! https://t.co/zykovFkQkJ
+------
+Cozy magic! 💖 https://t.co/OaithQHZyr
+------
+@raanapbot @WillFromAmerica @arabinow @CAVX @dontRunOff01 does the GIF in the above tweet have ALT text that reads "Seinfeld Dancing GIF"? Hoping it worked!
+------
+@WillFromAmerica @arabinow @raanapbot @CAVX let's make it happen!
+------
+@dontRunOff01 @raanapbot @arabinow @WillFromAmerica @CAVX @TheOrioleReport @AmyLeRue @RaanaP Thanks for the heads up @dontRunOff01, I hadn't realized twitter made this available for GIFs as well! I just added a new feature to the bot to include alt text for GIFs which hopefulyl works. In this case, it was a silly GIF of Timothee Chalamet!
+------
+2020-07-28 19:01:59
+The Creative Computing Institute @ual_cci is hiring a course leader for MA Internet Equalities! If you're into creative activism &amp; re-imagining tech to promote fairer and more equitable outcomes, take a look! https://t.co/qI3lfQTpAD Please share! 🎨✊🏾♀️🏳️‍⚧️🖥️🏳️‍🌈❤️
+ID: 1288187968373641216
+------
+2020-07-26 17:34:45
+Mandelbrot set with @p5xjs in the browser as seen at @shiffman but with colour, alpha, zoom &amp; save: https://t.co/9SjcGhxZ0a (give it a moment after you click to zoom!)
+
+#p5js #javascript #thecodingtrain #mandelbrot #mathematics #maths #fractal #fractint #stonesoup https://t.co/Tn2CZu3uNU
+ID: 1287441240489725953
+------
+2020-07-26 00:42:53
+K-12 CS educators, are you committed to improving equitable access and achievement in computer science? Do you want to work at the national level by sharing your expertise? Apply to become a CSTA Equity Fellow by 8/2: https://t.co/WAeGllr5V8 #CSforAll #CSEquity #CSTAEquityFellow https://t.co/catpUkUfIP
+ID: 1287186594466799616
+------
+@damianogui @chrissybrimmage @grantabbitt Wow!
+------
+Is it ok to assign twitter threads as reading for courses on generative text? Thanks @aparrish for starting this discussion. https://t.co/pSo39veYJX
+------
+Incredible work by @bxmani, I've learned so much by following his open source management of @ml5js. https://t.co/1CVTCpPWOU
+------
+2020-07-23 22:54:45
+🎙️Super excited to launch a new project with @dweinberger! “Tic-Tac-Toe the Hard Way” is a 9 episode introductory podcast about the human choices that go into making machine learning systems. More at https://t.co/HtoSVoGWNN
+ID: 1286434606372315136
+------
+@alefnull Lovely work! I didn't get to explain it but I got the code working! You can find the example here: https://t.co/mIQ90z6zh6 The formula I used is described in @jlfwong's post https://t.co/8oZioqsnj8
+------
+On this morning's stream I brought MewChoo into a @ProcessingOrg flocking world. @chrissybrimmage is your mew available for me to try? https://t.co/tIlNOoDWlA
+------
+2020-07-22 22:37:34
+Back in 2019, I taught a class at @ITP_NYU called "Games &amp; Joy" that I had planned to turn into a book. But the world sucks right now! 
+
+So instead, I decided to try and turn it into a series of essays. Here is Part 1. If y'all like it, I'll keep going 💖
+
+https://t.co/MmXvMzdtCs
+ID: 1286067893520814081
+------
+@Eightbitsofdata @thespite Yes, I'd love to hear how it goes, mistakes and all!
+------
+@redblobgames @LeiosOS Not exactly a "plan", but definitely not a coincidence! A plan is emerging though!
+------
+2020-07-21 15:09:39
+Looks like we'll be hopping on to fractal flame after flood fill! https://t.co/iH22ZSKvji
+ID: 1285592782393020417
+------
+some more results https://t.co/S6rUrGKCVE
+------
+What I'm most confused about is that I can't seem to produce these images in the paper that use just one variation. Were there specific pre and post transformation coefficients that were used? https://t.co/0xQmjtZDv1
+------
+Help! I'm lost in a world of fractal flames, anyone out there implemented this algorithm successfully? Considering this as a topic for a video, but not sure if I'm on the right track.
+paper: https://t.co/lScBxBaj3i
+code: https://t.co/qq2eaksvaL https://t.co/nGCkQeBQgJ
+------
+2020-07-20 16:58:37
+Implemented marching squares in Löve2D, based on @thecodingtrain's "Coding in the Cabana" video: https://t.co/k5Pb8SXTWb https://t.co/sOdXvVg7rd
+ID: 1285257820355657728
+------
+@rlewis2009 @ProcessingOrg oh ooops, that's a mistake! Remnant of Java code, can be skipped in Processing! (https://t.co/LEGYHKtJtI.)
+------
+@BabyIgnorant @ProcessingOrg The model was created in Blender and imported into Processing using loadShape()!
+------
+MewChoo has arrived in @ProcessingOrg. Exciting times ahead. https://t.co/gUwtxIcPFe
+------
+@BabiwesCode @chrissybrimmage Hopefully this fall! But it might get delayed until January when I'll be teaching the course again.
+------
+2020-07-20 01:16:36
+if you missed the live stream you can still check it out here: https://t.co/6Jdw13OaRw https://t.co/DysXxTcOMv
+ID: 1285020751108739072
+------
+2020-07-20 01:16:26
+Thanks @thecodingtrain for the awesome blender tutorial from the amazing @chrissybrimmage 
+
+#mewtrain https://t.co/EIFbpry1nJ
+ID: 1285020711053123585
+------
+2020-07-20 01:15:21
+End of Life Planning is absolutely essential especially for Black and Brown communities. I’d love your support in becoming a death doula. https://t.co/F56MYbmXas https://t.co/AKvhASdcwf
+ID: 1285020435990695937
+------
+2020-07-19 15:16:57
+My first 3D model in Blender! Thanks to @chrissybrimmage and @shiffman for the amazing stream!
+#mewTrain https://t.co/6OqvrNiqXv
+ID: 1284869843838279680
+------
+@cat_matroskinn @chrissybrimmage Wow!!!
+------
+2020-07-18 19:07:17
+😭 I love MewChoo https://t.co/oaXlpVct4Y
+ID: 1284565423086874624
+------
+Thank you for the donations and support for @tenderatl! We reached the goal of $500 but you can still donate at the link below or through their website directly. https://t.co/AbuyUkBC05 https://t.co/bptUGXR4FN https://t.co/BxjYdUyr8Q
+------
+Today, thanks to @chrissybrimmage, I created my first 3D model using Blender! Say hello to MewChoo! Please share yours! #MewTrain https://t.co/UEd0NkL73L
+------
+Starting in 10! https://t.co/bptUGXR4FN
+------
+Tomorrow on @thecodingtrain I am so excited to learn from the amazing artist ✨@chrissybrimmage✨! She'll talk about making the transition from 2D to 3D using Blender. This livestream is a fundraiser for @tenderatl to support mothers in need.💖 https://t.co/CX533Z0N5t Tune in! https://t.co/wU6PEEm5LS
+------
+@wblut Wonderful, can you link to it from this page? https://t.co/8VOIXllovG I'm going to go over additional examples on a live stream soon!
+------
+2020-07-17 19:45:37
+@shiffman In honor of this beautiful video, isovol2D, an extension of marching squares. Processing code to draw all triangles *between* two contours.
+Theory: https://t.co/KRuFGXxtqN
+Code: https://t.co/GDpS0EqOdr https://t.co/7GpCY36Z1H
+ID: 1284212682317586439
+------
+2020-07-17 17:04:31
+all aboard! 🥳 https://t.co/7aU7YmjhMw
+ID: 1284172137788592128
+------
+2020-07-17 17:04:18
+We'll also be fundraising for The Tender Foundation, an Atlanta nonprofit empowering all mamas by making essentials accessible. https://t.co/ByiBChoD8P
+ID: 1284172085116510210
+------
+2020-07-17 17:04:12
+Tomorrow at 11am EST @chrissybrimmage will be joining us as a Guest Conductor 🚂 She'll be discussing moving from 2D to 3D using Blender, and will give a demo tutorial on how to make your own Mew! https://t.co/OwadB31hIM
+ID: 1284172060382633987
+------
+@Rifkes I know, right?!?!
+------
+Last but not least, Marching Squares running over Open Simplex Noise. https://t.co/KHFMSZXS0j
+------
+And real-time video https://t.co/xbn3XbJYEG
+------
+Here's what it looks like running the algorithm over an image converted to grayscale. https://t.co/xuvu75kMbG
+------
+New video: Marching Squares in @ProcessingOrg!
+
+🎥https://t.co/l0Ukcm4kZ8
+💻https://t.co/8VOIXllovG
+
+Thanks to @jlfwong and @SebastianLague for the references! Please share your creative variations! https://t.co/fpWsIa3NeK
+------
+@omarieclaire Would love to help if I can! You can come by @thecodingtrain discord! lots of friendly helpers there. https://t.co/r4uiFKVLoo 🚂💖🌈
+------
+@raanapbot I love you too raanapbot.
+------
