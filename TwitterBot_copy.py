@@ -12,7 +12,7 @@ auth.set_access_token(access_token_key, access_token_secret)
 
 api = tweepy.API(auth)
 
-screenname = 'SRK345'
+screenname = 'NormZBot'
 tweets = api.user_timeline(screenname, count=200, tweet_mode='extended')
 
 
