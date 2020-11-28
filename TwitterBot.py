@@ -17,17 +17,17 @@ def getAuth():
     return api
 
 
-RobotSayingList = [" Beep", " Boop", " Bloop"]
+RobotSayingList = [" Beep", " Boop"]
 
 
 def postTweetRobot(apiObject, sayWhat):
     robotWords = ""
-    randomNum = random.randint(2, len(RobotSayingList))
+    randomNum = random.randint(2, 4)
     for _ in range(randomNum):
         robotWords += RobotSayingList[random.randint(
             0, len(RobotSayingList)-1)]
 
-    print(apiObject.update_status(sayWhat + robotWords))
+    apiObject.update_status(sayWhat + robotWords)
 
     print(f"Tweeting: {sayWhat + robotWords}")
 
@@ -61,7 +61,7 @@ def main():
 
     # replyInBinary(api, tweets, screenname)
     # postBinaryTweets(api, "I'm a binary boy")
-    postTweetRobot(api, "Twitter now worky?")
+    postTweetRobot(api, "Ello, Ello")
     # printTweets(tweets)
 
 
