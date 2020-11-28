@@ -59,9 +59,9 @@ def main():
     screenname = "NormZBot"
     tweets = api.user_timeline(screenname, count=1)
 
-    # replyInBinary(api, tweets, screenname)
+    replyInBinary(api, tweets, screenname)
     # postBinaryTweets(api, "I'm a binary boy")
-    postTweetRobot(api, "Ello, Ello")
+    # postTweetRobot(api, "Ello, Ello")
     # printTweets(tweets)
 
 
