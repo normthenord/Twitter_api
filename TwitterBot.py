@@ -18,9 +18,6 @@ def main():
     # BotFuncs.printTweets(tweets)
 
     BotFuncs.textFileStatuses(api, tweets, screenname)
-    print("test")
-
-    print("This may merge")
 
 
 if __name__ == "__main__":
