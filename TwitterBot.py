@@ -18,7 +18,7 @@ def main():
     # BotFuncs.printTweets(tweets)
 
     BotFuncs.textFileStatuses(api, tweets, screenname)
-    print("pee")
+    print("test")
 
 
 if __name__ == "__main__":
