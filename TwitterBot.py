@@ -71,9 +71,7 @@ def tweetAndReplyInBinary(apiObject, tweetString):
     replyInBinaryToId(apiObject, My_Tweet.id)
 
 
-def textFileStatuses(apiObject, screenname):
-    tweets = apiObject.user_timeline(
-        screenname, count=200, tweet_mode='extended')
+def textFileStatuses(apiObject, tweets, screenname):
 
     filename = f"C:\\Users\\xstom\\OneDrive\\Desktop\\Python Challenge\\Twitter_api\\txtFiles\\{screenname}.txt"
 
@@ -92,8 +90,8 @@ def textFileStatuses(apiObject, screenname):
 
 def main():
     api = getAuth()
-    screenname = "NormZBot"
-    tweets = api.user_timeline(screenname, count=1)
+    screenname = "SRK345"
+    tweets = api.user_timeline(screenname, count=200, tweet_mode='extended')
 
     # # --------------------------------------------
     # tweetAndReplyInBinary(api, "Hello, one and all")
@@ -104,9 +102,9 @@ def main():
 
     # postBinaryTweets(api, "I'm a binary boy")
 
-    printTweets(tweets)
+    # printTweets(tweets)
 
-    # textFileStatuses(api, screenname)
+    textFileStatuses(api, tweets, screenname)
 
 
 main()
