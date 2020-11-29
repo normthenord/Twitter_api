@@ -2,6 +2,7 @@ import settings
 import tweepy
 import os
 import random
+import time
 
 
 consumer_key = os.getenv("TWITTER_API_KEY")
@@ -26,10 +27,8 @@ def postTweetRobot(apiObject, sayWhat):
     for _ in range(randomNum):
         robotWords += RobotSayingList[random.randint(
             0, len(RobotSayingList)-1)]
-
-    apiObject.update_status(sayWhat + robotWords)
-
     print(f"Tweeting: {sayWhat + robotWords}")
+    return apiObject.update_status(sayWhat + robotWords)
 
 
 def postBinaryTweets(apiObject, sayWhat):
@@ -45,8 +44,22 @@ def replyInBinary(apiObject, tweets, screenname):  # Reply to last tweet in bina
         if len(binaryText + f"@{screenname}") > 280:
             apiObject.update_status(
                 f'@{screenname} ' + binaryText[:265] + '...', id)
+
         else:
             apiObject.update_status(f'@{screenname} ' + binaryText, id)
+
+
+def replyInBinaryToId(apiObject, TweetId):
+    id = TweetId
+    tweet = apiObject.get_status(id)
+    origText = tweet.text
+    screenname = tweet.user.screen_name
+    binaryText = "".join(format(ord(i), 'b') for i in origText)
+    if len(binaryText + f"@{screenname}") > 280:
+        apiObject.update_status(
+            f'@{screenname} ' + binaryText[:265] + '...', id)
+    else:
+        apiObject.update_status(f'@{screenname} ' + binaryText, id)
 
 
 def printTweets(tweets):
@@ -54,15 +67,24 @@ def printTweets(tweets):
         print(tweet.text + '\n')
 
 
+def tweetAndReplyInBinary(apiObject, tweetString):
+    My_Tweet = My_Tweet = postTweetRobot(apiObject, tweetString)
+    replyInBinaryToId(apiObject, My_Tweet.id)
+
+
 def main():
     api = getAuth()
     screenname = "NormZBot"
-    tweets = api.user_timeline(screenname, count=1)
+    # tweets = api.user_timeline(screenname, count=1)
 
-    replyInBinary(api, tweets, screenname)
+    # --------------------------------------------
+    tweetAndReplyInBinary(api, "Hello, one and all")
+
+    # postTweetRobot("Hello, little lady")
+
+    # replyInBinary(api, tweets, screenname)
+
     # postBinaryTweets(api, "I'm a binary boy")
-    # postTweetRobot(api, "Ello, Ello")
+
     # printTweets(tweets)
-
-
 main()
