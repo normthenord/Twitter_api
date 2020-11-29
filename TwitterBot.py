@@ -20,7 +20,7 @@ def main():
     BotFuncs.textFileStatuses(api, tweets, screenname)
     print("test")
 
-    print("This will not merge")
+    print("This may merge")
 
 
 if __name__ == "__main__":
