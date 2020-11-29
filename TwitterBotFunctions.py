@@ -1,8 +1,6 @@
-import settings
 import tweepy
 import os
 import random
-import time
 
 consumer_key = os.getenv("TWITTER_API_KEY")
 consumer_secret = os.getenv("TWITTER_API_SECRET")
@@ -38,7 +36,7 @@ def postBinaryTweets(apiObject, sayWhat):
 def replyInBinary(apiObject, tweets, screenname):  # Reply to last tweet in binary
     for tweet in tweets:
         id = tweet.id
-        origText = tweet.text
+        origText = tweet.full_text
         binaryText = "".join(format(ord(i), 'b') for i in origText)
         if len(binaryText + f"@{screenname}") > 280:
             apiObject.update_status(
@@ -50,8 +48,8 @@ def replyInBinary(apiObject, tweets, screenname):  # Reply to last tweet in bina
 
 def replyInBinaryToId(apiObject, TweetId):
     id = TweetId
-    tweet = apiObject.get_status(id)
-    origText = tweet.text
+    tweet = apiObject.get_status(id, tweet_mode='extended')
+    origText = tweet.full_text
     screenname = tweet.user.screen_name
     binaryText = "".join(format(ord(i), 'b') for i in origText)
     if len(binaryText + f"@{screenname}") > 280:
@@ -63,7 +61,7 @@ def replyInBinaryToId(apiObject, TweetId):
 
 def printTweets(tweets):
     for tweet in tweets:
-        print(tweet.text + '\n')
+        print(tweet.full_text + '\n')
 
 
 def tweetAndReplyInBinary(apiObject, tweetString):
@@ -86,25 +84,3 @@ def textFileStatuses(apiObject, tweets, screenname):
             f.write("\n-----------------------\n")
 
     f.close()
-
-
-def main():
-    api = getAuth()
-    screenname = "SRK345"
-    tweets = api.user_timeline(screenname, count=200, tweet_mode='extended')
-
-    # # --------------------------------------------
-    # tweetAndReplyInBinary(api, "Hello, one and all")
-
-    # postTweetRobot("Hello, little lady")
-
-    # replyInBinary(api, tweets, screenname)
-
-    # postBinaryTweets(api, "I'm a binary boy")
-
-    # printTweets(tweets)
-
-    textFileStatuses(api, tweets, screenname)
-
-
-main()
