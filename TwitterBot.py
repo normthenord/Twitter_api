@@ -19,6 +19,8 @@ def main():
 
     BotFuncs.textFileStatuses(api, tweets, screenname)
 
+    print("poop")
+
 
 if __name__ == "__main__":
     main()
