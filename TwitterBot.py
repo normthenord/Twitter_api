@@ -9,7 +9,7 @@ def main():
     # # --------------------------------------------
     # BotFuncs.tweetAndReplyInBinary(api, "Is pumpkin pie a lubricant?")
 
-    BotFuncs.postTweetRobot(api, "I test you")
+    # BotFuncs.postTweetRobot(api, "I test you")
 
     # BotFuncs.replyInBinary(api, tweets, screenname)
 
@@ -17,7 +17,7 @@ def main():
 
     # BotFuncs.printTweets(tweets)
 
-    # BotFuncs.textFileStatuses(api, tweets, screenname)
+    BotFuncs.textFileStatuses(api, tweets, screenname)
 
 
 if __name__ == "__main__":
