@@ -72,13 +72,32 @@ def tweetAndReplyInBinary(apiObject, tweetString):
     replyInBinaryToId(apiObject, My_Tweet.id)
 
 
+def textFileStatuses(apiObject, screenname):
+    tweets = apiObject.user_timeline(
+        screenname, count=200, tweet_mode='extended')
+
+    filename = f"C:\\Users\\xstom\\OneDrive\\Desktop\\Python Challenge\\Twitter_api\\txtFiles\\{screenname}.txt"
+
+    with open(filename, 'w', encoding='utf-8') as f:
+        for tweet in tweets:
+            full_text_retweeted = tweet._json.get("retweeted_status")
+            if None != full_text_retweeted:
+                f.write(str(tweet.created_at) + '\n' +
+                        str(full_text_retweeted.get("full_text")) + '\nID: ' + str(tweet.id))
+            else:
+                f.write(str(tweet._json["full_text"]))
+            f.write("\n-----------------------\n")
+
+    f.close()
+
+
 def main():
     api = getAuth()
     screenname = "NormZBot"
     # tweets = api.user_timeline(screenname, count=1)
 
-    # --------------------------------------------
-    tweetAndReplyInBinary(api, "Hello, one and all")
+    # # --------------------------------------------
+    # tweetAndReplyInBinary(api, "Hello, one and all")
 
     # postTweetRobot("Hello, little lady")
 
@@ -87,4 +106,8 @@ def main():
     # postBinaryTweets(api, "I'm a binary boy")
 
     # printTweets(tweets)
+
+    # textFileStatuses(api, screenname)
+
+
 main()
