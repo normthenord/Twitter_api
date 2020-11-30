@@ -36,15 +36,20 @@ def postBinaryTweets(apiObject, sayWhat):
 
 def replyInBinary(apiObject, tweets, screenname):  # Reply to last tweet in binary
     for tweet in tweets:
-        id = tweet.id
-        origText = tweet.full_text
-        binaryText = "".join(format(ord(i), 'b') for i in origText)
-        if len(binaryText + f"@{screenname}") > 280:
-            apiObject.update_status(
-                f'@{screenname} ' + binaryText[:265] + '...', id)
+        if not tweet.full_text.startswith('RT'):
+            id = tweet.id
+            origText = tweet.full_text
+            binaryText = "".join(format(ord(i), 'b') for i in origText)
+            if len(binaryText + f"@{screenname}") > 280:
+                post_text = f'@{screenname} ' + binaryText[:265] + '...'
+                apiObject.update_status(post_text, id)
+                print("Tweeting: " + post_text)
 
-        else:
-            apiObject.update_status(f'@{screenname} ' + binaryText, id)
+            else:
+                post_text = f'@{screenname} ' + binaryText
+                apiObject.update_status(post_text, id)
+                print("Tweeting: " + post_text)
+            return
 
 
 def replyInBinaryToId(apiObject, TweetId):
