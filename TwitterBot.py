@@ -1,23 +1,23 @@
-import BotFuncs
+import BotFuncs as Bot
 
 
 def main():
-    api = BotFuncs.getAuth()
+    api = Bot.getAuth()
     screenname = "NormZBot"
     tweets = api.user_timeline(screenname, count=1, tweet_mode='extended')
 
     # # --------------------------------------------
-    # BotFuncs.tweetAndReplyInBinary(api, "Is pumpkin pie a lubricant?")
+    # Bot.tweetAndReplyInBinary(api, "Is pumpkin pie a lubricant?")
 
-    # BotFuncs.postTweetRobot(api, "I test you")
+    # Bot.postTweetRobot(api, "I test you")
 
-    # BotFuncs.replyInBinary(api, tweets, screenname)
+    # Bot.replyInBinary(api, tweets, screenname)
 
-    # BotFuncs.postBinaryTweets(api, "I'm a binary boy")
+    # Bot.postBinaryTweets(api, "I'm a binary boy")
 
-    # BotFuncs.printTweets(tweets)
+    Bot.printTweets(tweets)
 
-    BotFuncs.textFileStatuses(api, tweets, screenname)
+    # Bot.textFileStatuses(api, tweets, screenname)
 
 
 if __name__ == "__main__":
