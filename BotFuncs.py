@@ -61,8 +61,10 @@ def replyInBinaryToId(apiObject, TweetId):
     if len(binaryText + f"@{screenname}") > 280:
         apiObject.update_status(
             f'@{screenname} ' + binaryText[:265] + '...', id)
+        print("Tweeting: " + f'@{screenname} ' + binaryText[:265] + '...')
     else:
         apiObject.update_status(f'@{screenname} ' + binaryText, id)
+        print("Tweeting: " + f'@{screenname} ' + binaryText)
 
 
 def printTweets(tweets):
@@ -71,7 +73,7 @@ def printTweets(tweets):
 
 
 def tweetAndReplyInBinary(apiObject, tweetString):
-    My_Tweet = My_Tweet = postTweetRobot(apiObject, tweetString)
+    My_Tweet = postTweetRobot(apiObject, tweetString)
     replyInBinaryToId(apiObject, My_Tweet.id)
 
 
@@ -90,3 +92,4 @@ def textFileStatuses(apiObject, tweets, screenname):
             f.write("\n-----------------------\n")
 
     f.close()
+    print(f"Done writing text in {screename}.txt")

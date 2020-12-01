@@ -7,15 +7,15 @@ def main():
     tweets = api.user_timeline(screenname, count=10, tweet_mode='extended')
 
     # # --------------------------------------------
-    # Bot.tweetAndReplyInBinary(api, "Is pumpkin pie a lubricant?")
+    # Bot.tweetAndReplyInBinary(api, "A 'bot's work is never done.")
 
     # Bot.postTweetRobot(api, "I test you")
 
-    Bot.replyInBinary(api, tweets, screenname)
+    # Bot.replyInBinary(api, tweets, screenname)
 
     # Bot.postBinaryTweets(api, "I'm a binary boy")
 
-    # Bot.printTweets(tweets)
+    Bot.printTweets(tweets)
 
     # Bot.textFileStatuses(api, tweets, screenname)
 
