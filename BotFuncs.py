@@ -92,4 +92,4 @@ def textFileStatuses(apiObject, tweets, screenname):
             f.write("\n-----------------------\n")
 
     f.close()
-    print(f"Done writing text in {scree}.txt")
+    print(f"Done writing text in {screenname}.txt")
