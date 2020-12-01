@@ -3,7 +3,7 @@ import BotFuncs as Bot
 
 def main():
     api = Bot.getAuth()
-    screenname = "shiffman"
+    screenname = "NateSilver538"
     tweets = api.user_timeline(screenname, count=10, tweet_mode='extended')
 
     # # --------------------------------------------
@@ -15,9 +15,9 @@ def main():
 
     # Bot.postBinaryTweets(api, "I'm a binary boy")
 
-    Bot.printTweets(tweets)
+    # Bot.printTweets(tweets)
 
-    # Bot.textFileStatuses(api, tweets, screenname)
+    Bot.textFileStatuses(api, tweets, screenname)
 
 
 if __name__ == "__main__":
