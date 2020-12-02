@@ -1,6 +1,6 @@
 import BotFuncs as Bot
 
-filter = '#HadesGame'
+filter = 'hello'
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     tweets = api.user_timeline(screenname, count=10, tweet_mode='extended')
 
     # # --------------------------------------------
-    # Bot.tweetAndReplyInBinary(api, "A 'bot's work is never done.")
+    Bot.tweetAndReplyInBinary(api, "This robot needs sleep")
 
     # Bot.postTweetRobot(api, "I test you")
 
@@ -21,9 +21,8 @@ def main():
 
     # Bot.textFileStatuses(api, tweets, screenname)
 
-    myStream = Bot.startStream(api, filter)
-
-    myStream.filter(track=[filter])
+    # # -----------------------------------------------
+    # Bot.startStream(api, filter)
 
 
 if __name__ == "__main__":

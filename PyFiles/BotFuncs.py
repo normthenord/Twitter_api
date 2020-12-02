@@ -38,7 +38,8 @@ def startStream(apiObject, _filter):
     global filter
     filter = _filter
     myStreamListener = MyStreamListener()
-    return tweepy.Stream(auth=apiObject.auth, listener=myStreamListener)
+    tweepy.Stream(auth=apiObject.auth,
+                  listener=myStreamListener).filter(track=[filter])
 
 
 def getAuth():
@@ -109,7 +110,7 @@ def tweetAndReplyInBinary(apiObject, tweetString):
 
 def textFileStatuses(apiObject, tweets, screenname):
 
-    filename = f"C:\\Users\\xstom\\OneDrive\\Desktop\\Python Challenge\\Twitter_api\\UserStatusTxtFiles\\{screenname}.txt"
+    filename = f"UserStatusTxtFiles\\{screenname}.txt"
 
     with open(filename, 'w', encoding='utf-8') as f:
         for tweet in tweets:
