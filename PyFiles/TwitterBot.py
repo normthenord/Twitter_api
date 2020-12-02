@@ -5,11 +5,11 @@ filter = 'hello'
 
 def main():
     api = Bot.getAuth()
-    screenname = "NateSilver538"
+    screenname = "NormZBot"
     tweets = api.user_timeline(screenname, count=10, tweet_mode='extended')
 
     # # --------------------------------------------
-    Bot.tweetAndReplyInBinary(api, "This robot needs sleep")
+    # Bot.tweetAndReplyInBinary(api, "This robot needs sleep")
 
     # Bot.postTweetRobot(api, "I test you")
 
@@ -17,7 +17,7 @@ def main():
 
     # Bot.postBinaryTweets(api, "I'm a binary boy")
 
-    # Bot.printTweets(tweets)
+    Bot.printTweets(tweets)
 
     # Bot.textFileStatuses(api, tweets, screenname)
 
