@@ -8,15 +8,14 @@ consumer_secret = os.getenv("TWITTER_API_SECRET")
 access_token_key = os.getenv("TWITTER_ACCESS_TOKEN")
 access_token_secret = os.getenv("TWITTER_TOKEN_SECRET")
 
+filter = ""
+
 
 class MyStreamListener(tweepy.StreamListener):
 
-    # def __init__(self, filter="Hades"):
-    #     tweepy.StreamListener.__init__(self)
-    #     self.filter = filter
-
     def on_status(self, status):
-        filter = '#HadesGame'
+        global filter
+        # filter = '#HadesGame'
         filename = f'StreamTxtFiles\\{filter}'
         with open(filename, 'a', encoding='utf-8') as f:
             f.write(status.created_at.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
@@ -33,6 +32,13 @@ class MyStreamListener(tweepy.StreamListener):
                     f.write(status.text)
             f.write('\nID: ' + status.id_str)
             f.write("\n-----------------------\n")
+
+
+def startStream(apiObject, _filter):
+    global filter
+    filter = _filter
+    myStreamListener = MyStreamListener()
+    return tweepy.Stream(auth=apiObject.auth, listener=myStreamListener)
 
 
 def getAuth():
@@ -117,8 +123,3 @@ def textFileStatuses(apiObject, tweets, screenname):
 
     f.close()
     print(f"Done writing text in {screenname}.txt")
-
-
-def startStream(apiObject):
-    myStreamListener = MyStreamListener()
-    return tweepy.Stream(auth=apiObject.auth, listener=myStreamListener)

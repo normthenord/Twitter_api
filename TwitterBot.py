@@ -21,7 +21,7 @@ def main():
 
     # Bot.textFileStatuses(api, tweets, screenname)
 
-    myStream = Bot.startStream(api)
+    myStream = Bot.startStream(api, filter)
 
     myStream.filter(track=[filter])
 
