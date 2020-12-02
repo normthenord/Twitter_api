@@ -9,6 +9,32 @@ access_token_key = os.getenv("TWITTER_ACCESS_TOKEN")
 access_token_secret = os.getenv("TWITTER_TOKEN_SECRET")
 
 
+class MyStreamListener(tweepy.StreamListener):
+
+    # def __init__(self, filter="Hades"):
+    #     tweepy.StreamListener.__init__(self)
+    #     self.filter = filter
+
+    def on_status(self, status):
+        filter = '#HadesGame'
+        filename = f'StreamTxtFiles\\{filter}'
+        with open(filename, 'a', encoding='utf-8') as f:
+            f.write(status.created_at.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
+            if hasattr(status, "retweeted_status"):  # Check if Retweet
+                try:
+                    f.write("RT " +
+                            status.retweeted_status.extended_tweet["full_text"])
+                except AttributeError:
+                    f.write("RT " + status.retweeted_status.text)
+            else:
+                try:
+                    f.write(status.extended_tweet["full_text"])
+                except AttributeError:
+                    f.write(status.text)
+            f.write('\nID: ' + status.id_str)
+            f.write("\n-----------------------\n")
+
+
 def getAuth():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token_key, access_token_secret)
@@ -16,10 +42,8 @@ def getAuth():
     return api
 
 
-RobotSayingList = [" Beep", " Boop"]
-
-
 def postTweetRobot(apiObject, sayWhat):
+    RobotSayingList = [" Beep", " Boop"]
     robotWords = ""
     randomNum = random.randint(2, 4)
     for _ in range(randomNum):
@@ -79,7 +103,7 @@ def tweetAndReplyInBinary(apiObject, tweetString):
 
 def textFileStatuses(apiObject, tweets, screenname):
 
-    filename = f"C:\\Users\\xstom\\OneDrive\\Desktop\\Python Challenge\\Twitter_api\\txtFiles\\{screenname}.txt"
+    filename = f"C:\\Users\\xstom\\OneDrive\\Desktop\\Python Challenge\\Twitter_api\\UserStatusTxtFiles\\{screenname}.txt"
 
     with open(filename, 'w', encoding='utf-8') as f:
         for tweet in tweets:
@@ -93,3 +117,8 @@ def textFileStatuses(apiObject, tweets, screenname):
 
     f.close()
     print(f"Done writing text in {screenname}.txt")
+
+
+def startStream(apiObject):
+    myStreamListener = MyStreamListener()
+    return tweepy.Stream(auth=apiObject.auth, listener=myStreamListener)

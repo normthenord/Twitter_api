@@ -1,5 +1,7 @@
 import BotFuncs as Bot
 
+filter = '#HadesGame'
+
 
 def main():
     api = Bot.getAuth()
@@ -17,7 +19,11 @@ def main():
 
     # Bot.printTweets(tweets)
 
-    Bot.textFileStatuses(api, tweets, screenname)
+    # Bot.textFileStatuses(api, tweets, screenname)
+
+    myStream = Bot.startStream(api)
+
+    myStream.filter(track=[filter])
 
 
 if __name__ == "__main__":
