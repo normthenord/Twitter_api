@@ -39,7 +39,7 @@ def startStream(apiObject, _filter):
     filter = _filter
     myStreamListener = MyStreamListener()
     tweepy.Stream(auth=apiObject.auth,
-                  listener=myStreamListener).filter(track=[filter])
+                  listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
 def getAuth():

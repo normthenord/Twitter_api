@@ -1,7 +1,5 @@
 import BotFuncs as Bot
 
-filter = 'hello'
-
 
 def main():
     api = Bot.getAuth()
@@ -17,12 +15,12 @@ def main():
 
     # Bot.postBinaryTweets(api, "I'm a binary boy")
 
-    Bot.printTweets(tweets)
+    # Bot.printTweets(tweets)
 
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    # Bot.startStream(api, filter)
+    Bot.startStream(api, "#TrumpTheFool")
 
 
 if __name__ == "__main__":
