@@ -20,7 +20,7 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#TrumpTheFool")
+    Bot.startStream(api, "#CryBabyTrump")
 
 
 if __name__ == "__main__":
