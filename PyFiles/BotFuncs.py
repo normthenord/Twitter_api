@@ -4,7 +4,6 @@ import random
 import settings
 import requests
 import concurrent.futures
-from itertools import repeat
 
 consumer_key = os.getenv("TWITTER_API_KEY")
 consumer_secret = os.getenv("TWITTER_API_SECRET")
@@ -54,14 +53,10 @@ def downloadMediaFiles(tweets, name, allowRetweets=True):
             if not os.path.isdir(f'MediaFiles\\{name}'):
                 os.mkdir(f'MediaFiles\\{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
-            while True:
-                if os.path.isfile(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg'):
-                    i += 1
-                else:
-                    with open(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg', 'wb') as f:
-                        f.write(r.content)
-                        f.close()
-                    break
+            if not os.path.isfile(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg'):
+                with open(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg', 'wb') as f:
+                    f.write(r.content)
+                    f.close()
 
 
 def downloadFromIDList(args_list):
