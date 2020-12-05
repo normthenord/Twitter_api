@@ -33,7 +33,7 @@ def main():
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False)
+    Bot.downloadMediaFilesFromTxtDoc(api, 'Hades', False)
 
 
 if __name__ == "__main__":

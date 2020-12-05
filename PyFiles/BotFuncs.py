@@ -18,7 +18,6 @@ class MyStreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
         global filter
-        # filter = '#HadesGame'
         filename = f'StreamTxtFiles\\{filter}'
         with open(filename, 'a', encoding='utf-8') as f:
             f.write(status.created_at.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
@@ -47,7 +46,6 @@ def startStream(apiObject, _filter):
 
 
 def downloadMediaFiles(tweets, name, allowRetweets=True):
-    # i = 1
     for tweet in tweets:
         if not allowRetweets and tweet._json.get("retweeted_status"):
             pass
@@ -100,17 +98,6 @@ def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
             executor.map(downloadFromIDList, args_list)
-
-        # for idz in id_list:
-        #     if idz:
-        #         print("Trying...")
-        #         try:
-        #             tweets = apiObject.statuses_lookup(idz)
-        #         except tweepy.TweepError as e:
-        #             print(e.args[0][0]['message'])
-        #             if e.args[0][0]['code'] == 88:
-        #                 return
-        #         downloadMediaFiles(tweets, name, allowRetweets)
         f.close()
 
 
