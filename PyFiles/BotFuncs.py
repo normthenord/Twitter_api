@@ -47,7 +47,7 @@ def startStream(apiObject, _filter):
 
 
 def downloadMediaFiles(tweets, name, allowRetweets=True):
-    i = 1
+    # i = 1
     for tweet in tweets:
         if not allowRetweets and tweet._json.get("retweeted_status"):
             pass
@@ -57,10 +57,10 @@ def downloadMediaFiles(tweets, name, allowRetweets=True):
                 os.mkdir(f'MediaFiles\\{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
             while True:
-                if os.path.isfile(f'MediaFiles\\{name}\\{name}_{i}.jpg'):
+                if os.path.isfile(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg'):
                     i += 1
                 else:
-                    with open(f'MediaFiles\\{name}\\{name}_{i}.jpg', 'wb') as f:
+                    with open(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg', 'wb') as f:
                         f.write(r.content)
                         f.close()
                     break
