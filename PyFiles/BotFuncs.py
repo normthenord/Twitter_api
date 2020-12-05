@@ -3,6 +3,8 @@ import os
 import random
 import settings
 import requests
+import concurrent.futures
+from itertools import repeat
 
 consumer_key = os.getenv("TWITTER_API_KEY")
 consumer_secret = os.getenv("TWITTER_API_SECRET")
@@ -33,6 +35,7 @@ class MyStreamListener(tweepy.StreamListener):
                     f.write(status.text)
             f.write('\nID: ' + status.id_str)
             f.write("\n-----------------------\n")
+            f.close()
 
 
 def startStream(apiObject, _filter):
@@ -43,10 +46,13 @@ def startStream(apiObject, _filter):
                   listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
-def downloadMediaFiles(tweets, name):
+def downloadMediaFiles(tweets, name, allowRetweets=True):
     i = 1
     for tweet in tweets:
-        if 'media' in tweet.entities:
+        if not allowRetweets and tweet._json.get("retweeted_status"):
+            pass
+
+        elif 'media' in tweet.entities:
             if not os.path.isdir(f'MediaFiles\\{name}'):
                 os.mkdir(f'MediaFiles\\{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
@@ -56,10 +62,25 @@ def downloadMediaFiles(tweets, name):
                 else:
                     with open(f'MediaFiles\\{name}\\{name}_{i}.jpg', 'wb') as f:
                         f.write(r.content)
+                        f.close()
                     break
 
 
-def downloadMediaFilesFromTxtDoc(apiObject, name):
+def downloadFromIDList(args_list):
+    id_list, apiObject, name, allowRetweets = args_list
+    tweets = []
+    if id_list:
+        print("Trying...")
+        try:
+            tweets = apiObject.statuses_lookup(id_list)
+        except tweepy.TweepError as e:
+            print(e.args[0][0]['message'])
+            if e.args[0][0]['code'] == 88:
+                return
+        downloadMediaFiles(tweets, name, allowRetweets)
+
+
+def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
     with open(f'StreamTxtFiles\\{name}', 'r', encoding='utf-8') as f:
         ids = []
         splitText = f.read().split('\n')
@@ -75,17 +96,22 @@ def downloadMediaFilesFromTxtDoc(apiObject, name):
             except:
                 id_list.append(ids[i*100:])
 
-        tweets = []
-        for idz in id_list:
-            if idz:
-                print("Trying...")
-                try:
-                    tweets = apiObject.statuses_lookup(idz)
-                except tweepy.TweepError as e:
-                    print(e.args[0][0]['message'])
-                    if e.args[0][0]['code'] == 88:
-                        return
-                downloadMediaFiles(tweets, name)
+        args_list = [(idz, apiObject, name, allowRetweets) for idz in id_list]
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            executor.map(downloadFromIDList, args_list)
+
+        # for idz in id_list:
+        #     if idz:
+        #         print("Trying...")
+        #         try:
+        #             tweets = apiObject.statuses_lookup(idz)
+        #         except tweepy.TweepError as e:
+        #             print(e.args[0][0]['message'])
+        #             if e.args[0][0]['code'] == 88:
+        #                 return
+        #         downloadMediaFiles(tweets, name, allowRetweets)
+        f.close()
 
 
 def getAuth():
@@ -168,5 +194,5 @@ def textFileStatuses(apiObject, tweets, screenname):
                 f.write(str(tweet._json["full_text"]))
             f.write("\n-----------------------\n")
 
-    f.close()
+        f.close()
     print(f"Done writing text in {screenname}.txt")

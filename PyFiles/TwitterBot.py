@@ -25,7 +25,7 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#HollowKnight")
+    # Bot.startStream(api, "#HollowKnight")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
@@ -33,7 +33,7 @@ def main():
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    # Bot.downloadMediaFilesFromTxtDoc(api, '#hollowKnight')
+    Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False)
 
 
 if __name__ == "__main__":
