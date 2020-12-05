@@ -28,9 +28,11 @@ def main():
     Bot.startStream(api, "#HollowKnight")
 
     # # -----------------------------------------------
+    # # Downloads by getting status from a user_timeline
     # Bot.downloadMediaFiles(tweets, screenname)
 
     # # ------------------------------------------------
+    # # Downloads from a text file made by startStream()
     # Bot.downloadMediaFilesFromTxtDoc(api, '#hollowKnight')
 
 
