@@ -33,7 +33,7 @@ def main():
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    Bot.downloadMediaFilesFromTxtDoc(api, 'Hades', False)
+    Bot.downloadMediaFilesFromTxtDoc(api, '#HollowKnight', False)
 
 
 if __name__ == "__main__":
