@@ -2,6 +2,7 @@ import tweepy
 import os
 import random
 import settings
+import requests
 
 consumer_key = os.getenv("TWITTER_API_KEY")
 consumer_secret = os.getenv("TWITTER_API_SECRET")
@@ -40,6 +41,18 @@ def startStream(apiObject, _filter):
     myStreamListener = MyStreamListener()
     tweepy.Stream(auth=apiObject.auth,
                   listener=myStreamListener).filter(track=[filter], is_async=True)
+
+
+def downloadMediaFiles(tweets, screenname):
+    i = 1
+    for tweet in tweets:
+        if 'media' in tweet.entities:
+            if not os.path.isdir(f'MediaFiles\\{screenname}'):
+                os.mkdir(f'MediaFiles\\{screenname}')
+            r = requests.get(tweet.entities['media'][0]['media_url'])
+            with open(f'MediaFiles\\{screenname}\\{i}.jpg', 'wb') as f:
+                f.write(r.content)
+            i += 1
 
 
 def getAuth():

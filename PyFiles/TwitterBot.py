@@ -3,8 +3,8 @@ import BotFuncs as Bot
 
 def main():
     api = Bot.getAuth()
-    screenname = "NormZBot"
-    tweets = api.user_timeline(screenname, count=10, tweet_mode='extended')
+    screenname = "shiffman"
+    tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
 
     # # --------------------------------------------
     # Bot.tweetAndReplyInBinary(api, "This robot needs sleep")
@@ -20,7 +20,10 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#CryBabyTrump")
+    # Bot.startStream(api, "#HollowKnight")
+
+    # # -----------------------------------------------
+    Bot.downloadMediaFiles(tweets, screenname)
 
 
 if __name__ == "__main__":
