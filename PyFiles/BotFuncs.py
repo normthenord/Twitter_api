@@ -43,16 +43,49 @@ def startStream(apiObject, _filter):
                   listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
-def downloadMediaFiles(tweets, screenname):
+def downloadMediaFiles(tweets, name):
     i = 1
     for tweet in tweets:
         if 'media' in tweet.entities:
-            if not os.path.isdir(f'MediaFiles\\{screenname}'):
-                os.mkdir(f'MediaFiles\\{screenname}')
+            if not os.path.isdir(f'MediaFiles\\{name}'):
+                os.mkdir(f'MediaFiles\\{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
-            with open(f'MediaFiles\\{screenname}\\{i}.jpg', 'wb') as f:
-                f.write(r.content)
-            i += 1
+            while True:
+                if os.path.isfile(f'MediaFiles\\{name}\\{name}_{i}.jpg'):
+                    i += 1
+                else:
+                    with open(f'MediaFiles\\{name}\\{name}_{i}.jpg', 'wb') as f:
+                        f.write(r.content)
+                    break
+
+
+def downloadMediaFilesFromTxtDoc(apiObject, name):
+    with open(f'StreamTxtFiles\\{name}', 'r', encoding='utf-8') as f:
+        ids = []
+        splitText = f.read().split('\n')
+        for line in splitText:
+            if line.startswith("ID: "):
+                ids.append(line[4:])
+
+        id_list = []
+        for i in range(int(len(ids)/100)+1):
+            try:
+                id_list.append(ids[i*100:(i+1)*100])
+                print(len(id_list[i]))
+            except:
+                id_list.append(ids[i*100:])
+
+        tweets = []
+        for idz in id_list:
+            if idz:
+                print("Trying...")
+                try:
+                    tweets = apiObject.statuses_lookup(idz)
+                except tweepy.TweepError as e:
+                    print(e.args[0][0]['message'])
+                    if e.args[0][0]['code'] == 88:
+                        return
+                downloadMediaFiles(tweets, name)
 
 
 def getAuth():
