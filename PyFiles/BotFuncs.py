@@ -62,8 +62,6 @@ def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True):
                     f.write(r.content)
                     f.close()
 
-    findDuplicateImages(f'u_{name}')
-
 
 def downloadFromIDList(args_list):
     id_list, apiObject, name, allowRetweets = args_list
@@ -76,7 +74,8 @@ def downloadFromIDList(args_list):
             print(e.args[0][0]['message'])
             if e.args[0][0]['code'] == 88:
                 return
-        downloadMediaFiles(tweets, name, allowRetweets)
+        downloadMediaFilesFromTimeline(tweets, name, allowRetweets)
+        print("Complete")
 
 
 def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
