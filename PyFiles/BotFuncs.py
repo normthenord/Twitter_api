@@ -1,3 +1,5 @@
+import glob
+from PIL import Image
 import tweepy
 import os
 import random
@@ -17,7 +19,7 @@ class MyStreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
         global filter
-        filename = f'StreamTxtFiles\\{filter}'
+        filename = f'StreamTxtFiles/{filter}'
         with open(filename, 'a', encoding='utf-8') as f:
             f.write(status.created_at.strftime("%m/%d/%Y, %H:%M:%S") + '\n')
             if hasattr(status, "retweeted_status"):  # Check if Retweet
@@ -44,19 +46,23 @@ def startStream(apiObject, _filter):
                   listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
-def downloadMediaFiles(tweets, name, allowRetweets=True):
+def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True):
+    if not os.path.isdir('MediaFiles/'):
+        os.mkdir('MediaFiles/')
     for tweet in tweets:
         if not allowRetweets and tweet._json.get("retweeted_status"):
             pass
 
         elif 'media' in tweet.entities:
-            if not os.path.isdir(f'MediaFiles\\{name}'):
-                os.mkdir(f'MediaFiles\\{name}')
+            if not os.path.isdir(f'MediaFiles/u_{name}'):
+                os.mkdir(f'MediaFiles/u_{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
-            if not os.path.isfile(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg'):
-                with open(f'MediaFiles\\{name}\\{name}_{tweet.id_str}.jpg', 'wb') as f:
+            if not os.path.isfile(f'MediaFiles/u_{name}/{name}_{tweet.id_str}.jpg'):
+                with open(f'MediaFiles/u_{name}/{name}_{tweet.id_str}.jpg', 'wb') as f:
                     f.write(r.content)
                     f.close()
+
+    findDuplicateImages(f'u_{name}')
 
 
 def downloadFromIDList(args_list):
@@ -74,7 +80,7 @@ def downloadFromIDList(args_list):
 
 
 def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
-    with open(f'StreamTxtFiles\\{name}', 'r', encoding='utf-8') as f:
+    with open(f'StreamTxtFiles/{name}', 'r', encoding='utf-8') as f:
         ids = []
         splitText = f.read().split('\n')
         for line in splitText:
@@ -93,6 +99,7 @@ def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
             executor.map(downloadFromIDList, args_list)
+        findDuplicateImages(name)
         f.close()
 
 
@@ -164,7 +171,7 @@ def tweetAndReplyInBinary(apiObject, tweetString):
 
 def textFileStatuses(apiObject, tweets, screenname):
 
-    filename = f"UserStatusTxtFiles\\{screenname}.txt"
+    filename = f"UserStatusTxtFiles/{screenname}.txt"
 
     with open(filename, 'w', encoding='utf-8') as f:
         for tweet in tweets:
@@ -178,3 +185,32 @@ def textFileStatuses(apiObject, tweets, screenname):
 
         f.close()
     print(f"Done writing text in {screenname}.txt")
+
+
+def findDuplicateImages(fileName):
+
+    img_list = glob.glob(
+        f"MediaFiles/{fileName}/*.jpg")
+
+    print(len(img_list))
+
+    data_list = []
+    new_list = []
+    for img in img_list:
+        data = Image.open(img).load()
+        repeat = False
+        try:
+            pixelData = [data[x*5, x*5] for x in range(10)]
+            if pixelData in data_list:
+                repeat = True
+            if repeat == False:
+                data_list.append(pixelData)
+                new_list.append(img)
+        except:
+            print("error")
+
+    print(len(new_list))
+
+    for img in img_list:
+        if img not in new_list:
+            os.remove(img)

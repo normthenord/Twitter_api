@@ -3,7 +3,7 @@ import BotFuncs as Bot
 
 def main():
     api = Bot.getAuth()
-    screenname = "shiffman"
+    screenname = "NateSilver538"
     tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
 
     # # --------------------------------------------
@@ -25,15 +25,15 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    # Bot.startStream(api, "#HollowKnightFanArt")
+    # Bot.startStream(api, "#HadesGame")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
-    # Bot.downloadMediaFiles(tweets, screenname)
+    # Bot.downloadMediaFilesFromTimeline(tweets, screenname)
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    Bot.downloadMediaFilesFromTxtDoc(api, '#HollowKnight', False)
+    # Bot.downloadMediaFilesFromTxtDoc(api, '#TrumpTheFool', False)
 
 
 if __name__ == "__main__":
