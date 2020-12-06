@@ -30,10 +30,11 @@ def main():
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
     # Bot.downloadMediaFilesFromTimeline(tweets, screenname)
+    # Bot.findDuplicateImages(f'u_{screenname}')
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    Bot.downloadMediaFilesFromTxtDoc(api, '#HollowKnight', False)
+    # Bot.downloadMediaFilesFromTxtDoc(api, '#HollowKnight', False)
 
 
 if __name__ == "__main__":
