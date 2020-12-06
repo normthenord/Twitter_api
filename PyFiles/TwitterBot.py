@@ -25,16 +25,16 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#CodingTrain")
+    # Bot.startStream(api, "#")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
     # Bot.downloadMediaFilesFromTimeline(tweets, screenname)
-    # Bot.findDuplicateImages(f'u_{screenname}')
+    # Bot.findDuplicateImages(screenname)
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    # Bot.downloadMediaFilesFromTxtDoc(api, '#HollowKnight', False)
+    # Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False)
 
 
 if __name__ == "__main__":

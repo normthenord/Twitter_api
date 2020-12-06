@@ -41,6 +41,7 @@ class MyStreamListener(tweepy.StreamListener):
 def startStream(apiObject, _filter):
     global filter
     filter = _filter
+    print(f"Starting stream\nListening for: {filter}")
     myStreamListener = MyStreamListener()
     tweepy.Stream(auth=apiObject.auth,
                   listener=myStreamListener).filter(track=[filter], is_async=True)
@@ -54,11 +55,11 @@ def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True):
             pass
 
         elif 'media' in tweet.entities:
-            if not os.path.isdir(f'MediaFiles/u_{name}'):
-                os.mkdir(f'MediaFiles/u_{name}')
+            if not os.path.isdir(f'MediaFiles/{name}'):
+                os.mkdir(f'MediaFiles/{name}')
             r = requests.get(tweet.entities['media'][0]['media_url'])
-            if not os.path.isfile(f'MediaFiles/u_{name}/{name}_{tweet.id_str}.jpg'):
-                with open(f'MediaFiles/u_{name}/{name}_{tweet.id_str}.jpg', 'wb') as f:
+            if not os.path.isfile(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg'):
+                with open(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg', 'wb') as f:
                     f.write(r.content)
                     f.close()
 
