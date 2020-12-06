@@ -25,7 +25,7 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    # Bot.startStream(api, "#CodingTrain")
+    Bot.startStream(api, "#CodingTrain")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
