@@ -35,6 +35,7 @@ def main():
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
+    # # Expects (api, string, allowRetweet, allowVideo)
     Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False, True)
 
 
