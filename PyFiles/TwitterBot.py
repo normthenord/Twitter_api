@@ -1,9 +1,10 @@
 import BotFuncs as Bot
+import requests
 
 
 def main():
     api = Bot.getAuth()
-    screenname = "NateSilver538"
+    screenname = "shiffman"
     tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
 
     # # --------------------------------------------
@@ -34,7 +35,7 @@ def main():
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
-    # Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False)
+    Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False, True)
 
 
 if __name__ == "__main__":

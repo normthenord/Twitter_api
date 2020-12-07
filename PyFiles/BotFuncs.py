@@ -47,39 +47,57 @@ def startStream(apiObject, _filter):
                   listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
-def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True):
+def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True, includeVideos=True):
     if not os.path.isdir('MediaFiles/'):
         os.mkdir('MediaFiles/')
     for tweet in tweets:
         if not allowRetweets and tweet._json.get("retweeted_status"):
             pass
 
-        elif 'media' in tweet.entities:
+        elif hasattr(tweet, 'extended_entities'):
             if not os.path.isdir(f'MediaFiles/{name}'):
                 os.mkdir(f'MediaFiles/{name}')
-            r = requests.get(tweet.entities['media'][0]['media_url'])
-            if not os.path.isfile(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg'):
-                with open(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg', 'wb') as f:
-                    f.write(r.content)
-                    f.close()
+            if 'video_info' in tweet.extended_entities['media'][0] and includeVideos:
+                video_version = [0, 0]
+                i = 0
+                for variant in tweet.extended_entities['media'][0]['video_info']['variants']:
+                    if hasattr(variant, 'bitrate'):
+                        print(variant['bitrate'])
+                        if variant['bitrate'] > video_version[1]:
+                            video_version[0] = tweet.extended_entities['media'][0]['video_info']['variants'][i]
+                    i += 1
+                r = requests.get(
+                    tweet.extended_entities['media'][0]['video_info']['variants'][video_version[0]]['url'])
+                if not os.path.isfile(f'MediaFiles/{name}/{name}_{tweet.id_str}.mp4'):
+                    with open(f'MediaFiles/{name}/{name}_{tweet.id_str}.mp4', 'wb') as f:
+                        f.write(r.content)
+                        f.close()
+            else:
+                r = requests.get(
+                    tweet.extended_entities['media'][0]['media_url'])
+                if not os.path.isfile(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg'):
+                    with open(f'MediaFiles/{name}/{name}_{tweet.id_str}.jpg', 'wb') as f:
+                        f.write(r.content)
+                        f.close()
 
 
 def downloadFromIDList(args_list):
-    id_list, apiObject, name, allowRetweets = args_list
+    id_list, apiObject, name, allowRetweets, includeVideos = args_list
     tweets = []
     if id_list:
         print("Trying...")
         try:
-            tweets = apiObject.statuses_lookup(id_list)
+            tweets = apiObject.statuses_lookup(id_list, tweet_mode='extended')
         except tweepy.TweepError as e:
             print(e.args[0][0]['message'])
             if e.args[0][0]['code'] == 88:
                 return
-        downloadMediaFilesFromTimeline(tweets, name, allowRetweets)
+        downloadMediaFilesFromTimeline(
+            tweets, name, allowRetweets, includeVideos)
         print("Complete")
 
 
-def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
+def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True, includeVideos=True):
     with open(f'StreamTxtFiles/{name}', 'r', encoding='utf-8') as f:
         ids = []
         splitText = f.read().split('\n')
@@ -90,12 +108,13 @@ def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True):
         id_list = []
         for i in range(int(len(ids)/100)+1):
             try:
-                id_list.append(ids[i*100:(i+1)*100])
+                id_list.append(ids[i*100: (i+1)*100])
                 print(len(id_list[i]))
             except:
                 id_list.append(ids[i*100:])
 
-        args_list = [(idz, apiObject, name, allowRetweets) for idz in id_list]
+        args_list = [(idz, apiObject, name, allowRetweets, includeVideos)
+                     for idz in id_list]
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
             executor.map(downloadFromIDList, args_list)
@@ -133,7 +152,7 @@ def replyInBinary(apiObject, tweets, screenname):  # Reply to last tweet in bina
             origText = tweet.full_text
             binaryText = "".join(format(ord(i), 'b') for i in origText)
             if len(binaryText + f"@{screenname}") > 280:
-                post_text = f'@{screenname} ' + binaryText[:265] + '...'
+                post_text = f'@{screenname} ' + binaryText[: 265] + '...'
                 apiObject.update_status(post_text, id)
                 print("Tweeting: " + post_text)
 
