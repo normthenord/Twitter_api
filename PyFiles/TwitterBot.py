@@ -26,7 +26,7 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#OSRS")
+    Bot.startStream(api, "#HouseHunters")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
