@@ -55,7 +55,6 @@ def downloadMediaFiles(tweets, name, allowRetweets=True, includeVideos=True):
             pass
 
         elif hasattr(tweet, 'extended_entities'):
-            print("boop")
             if not os.path.isdir(f'MediaFiles/{name}'):
                 os.mkdir(f'MediaFiles/{name}')
             if 'video_info' in tweet.extended_entities['media'][0] and includeVideos:
@@ -98,20 +97,13 @@ def downloadFromIDList(args_list):
         print("Complete")
 
 
-# def downloadFromIDList(apiObject, _tweets, name, allowRetweets=False, includeVideos=False):
-#     tweet_ids = [tweet.id for tweet in _tweets]
-#     if tweet_ids:
-#         print("Trying...")
-#         try:
-#             tweets = apiObject.statuses_lookup(
-#                 tweet_ids, tweet_mode='extended')
-#         except tweepy.TweepError as e:
-#             print(e.args[0][0]['message'])
-#             if e.args[0][0]['code'] == 88:
-#                 return
-#         downloadMediaFiles(
-#             tweets, name, allowRetweets, includeVideos)
-#         print("Complete")
+def downloadMediaFilesSearch(apiObject, _searchName, numPages, allowRetweets=False, includeVideos=False):
+    searchName = _searchName
+    if not allowRetweets:
+        searchName += " exclude:retweets"
+    for tweets in tweepy.Cursor(apiObject.search, q=searchName, count=100, lang="en", since_id=0).pages(numPages):
+        print(len(tweets))
+        downloadMediaFiles(tweets, _searchName, allowRetweets, includeVideos)
 
 
 def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True, includeVideos=True):

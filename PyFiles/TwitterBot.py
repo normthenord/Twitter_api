@@ -1,5 +1,6 @@
 import BotFuncs as Bot
 import requests
+import tweepy
 
 
 def main():
@@ -26,11 +27,7 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-<<<<<<< HEAD
-    # Bot.startStream(api, "#OSRS")
-=======
-    Bot.startStream(api, "#HouseHunters")
->>>>>>> 818916ad5f695bbf41772a709b6f94e9f60c0594
+    # Bot.startStream(api, "#HouseHunters")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
@@ -42,11 +39,9 @@ def main():
     # # Expects (api, string, allowRetweet, allowVideo)
     # Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False, True)
 
-    # # ------------------------------------------------
-    # # Downloads last 100 media files by search term
-    tweets = api.search("#HollowKnight",
-                        count='500', tweet_mode='extended')
-    Bot.downloadMediaFiles(tweets, '#HollowKnight2', False, False)
+    # # -------------------------------------------------
+    # # Downloads mediafiles from search term in last 100 * count
+    Bot.downloadMediaFilesSearch(api, "#Butts", 100, False, False)
 
 
 if __name__ == "__main__":
