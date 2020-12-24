@@ -4,8 +4,8 @@ import requests
 
 def main():
     api = Bot.getAuth()
-    screenname = "shiffman"
-    tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
+    screenname = "KingJames"
+    # tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
 
     # # --------------------------------------------
     # Bot.tweetAndReplyInBinary(api, "This robot needs sleep")
@@ -26,17 +26,23 @@ def main():
     # Bot.textFileStatuses(api, tweets, screenname)
 
     # # -----------------------------------------------
-    Bot.startStream(api, "#OSRS")
+    # Bot.startStream(api, "#OSRS")
 
     # # -----------------------------------------------
     # # Downloads by getting status from a user_timeline
-    # Bot.downloadMediaFilesFromTimeline(tweets, screenname)
+    # Bot.downloadMediaFiles(tweets, screenname, False, False)
     # Bot.findDuplicateImages(screenname)
 
     # # ------------------------------------------------
     # # Downloads from a text file made by startStream()
     # # Expects (api, string, allowRetweet, allowVideo)
     # Bot.downloadMediaFilesFromTxtDoc(api, 'Disney', False, True)
+
+    # # ------------------------------------------------
+    # # Downloads last 100 media files by search term
+    tweets = api.search("#HollowKnight",
+                        count='500', tweet_mode='extended')
+    Bot.downloadMediaFiles(tweets, '#HollowKnight2', False, False)
 
 
 if __name__ == "__main__":

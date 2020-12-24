@@ -47,7 +47,7 @@ def startStream(apiObject, _filter):
                   listener=myStreamListener).filter(track=[filter], is_async=True)
 
 
-def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True, includeVideos=True):
+def downloadMediaFiles(tweets, name, allowRetweets=True, includeVideos=True):
     if not os.path.isdir('MediaFiles/'):
         os.mkdir('MediaFiles/')
     for tweet in tweets:
@@ -55,6 +55,7 @@ def downloadMediaFilesFromTimeline(tweets, name, allowRetweets=True, includeVide
             pass
 
         elif hasattr(tweet, 'extended_entities'):
+            print("boop")
             if not os.path.isdir(f'MediaFiles/{name}'):
                 os.mkdir(f'MediaFiles/{name}')
             if 'video_info' in tweet.extended_entities['media'][0] and includeVideos:
@@ -92,9 +93,25 @@ def downloadFromIDList(args_list):
             print(e.args[0][0]['message'])
             if e.args[0][0]['code'] == 88:
                 return
-        downloadMediaFilesFromTimeline(
+        downloadMediaFiles(
             tweets, name, allowRetweets, includeVideos)
         print("Complete")
+
+
+# def downloadFromIDList(apiObject, _tweets, name, allowRetweets=False, includeVideos=False):
+#     tweet_ids = [tweet.id for tweet in _tweets]
+#     if tweet_ids:
+#         print("Trying...")
+#         try:
+#             tweets = apiObject.statuses_lookup(
+#                 tweet_ids, tweet_mode='extended')
+#         except tweepy.TweepError as e:
+#             print(e.args[0][0]['message'])
+#             if e.args[0][0]['code'] == 88:
+#                 return
+#         downloadMediaFiles(
+#             tweets, name, allowRetweets, includeVideos)
+#         print("Complete")
 
 
 def downloadMediaFilesFromTxtDoc(apiObject, name, allowRetweets=True, includeVideos=True):
