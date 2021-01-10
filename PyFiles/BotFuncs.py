@@ -201,7 +201,7 @@ def textFileStatuses(apiObject, tweets, screenname):
 
     filename = f"UserStatusTxtFiles/{screenname}.txt"
 
-    with open(filename, 'w', encoding='utf-8') as f:
+    with open(filename, 'a+', encoding='utf-8') as f:
         for tweet in tweets:
             full_text_retweeted = tweet._json.get("retweeted_status")
             if None != full_text_retweeted:
