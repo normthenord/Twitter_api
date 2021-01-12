@@ -5,7 +5,7 @@ import tweepy
 
 def main():
     api = Bot.getAuth()
-    screenname = ""
+    screenname = "Quarantine Baby"
     # tweets = api.user_timeline(screenname, count=100, tweet_mode='extended')
 
     # # --------------------------------------------
@@ -43,7 +43,7 @@ def main():
     # # Downloads mediafiles from search term in last 100 * count
     # Bot.downloadMediaFilesSearch(api, "Pure Vessel", 100, True, True)
 
-    for tweets in tweepy.Cursor(api.search, q=f"{screenname} exclude:retweets", count=100, lang="en", tweet_mode="extended", since_id=0).pages(10):
+    for tweets in tweepy.Cursor(api.search, q=f'"{screenname}" exclude:retweets', count=100, lang="en", tweet_mode="extended", since_id=0).pages(10):
         Bot.textFileStatuses(api, tweets, f"{screenname}")
 
 
